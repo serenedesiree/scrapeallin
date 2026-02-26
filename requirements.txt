@@ -1,0 +1,6 @@
+youtube-transcript-api
+pytube
+pandas
+matplotlib
+requests
+beautifulsoup4
