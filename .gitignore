@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual Environment
+venv/
+ENV/
+.env
+
+# Project-specific ignores
+videos.json
+*.png
+analysis_results.json
+output/
