@@ -1,43 +1,57 @@
 # All In Podcast Scraper Bot
 
-## Overview
-The All In Podcast Scraper Bot is a tool designed to analyze podcast episodes for keyword mentions and present the results in a visually engaging manner with timeline charts.
-
-## Features
-- **Keyword Analysis:** Identify the frequency of specified keywords throughout podcast episodes.
-- **Timeline Charts:** View mentions of keywords over time with interactive charts.
-
-## Requirements
-- Python 3.x
-- Necessary libraries (listed in `requirements.txt`):
-  - `requests`
-  - `beautifulsoup4`
-  - `matplotlib`
-
 ## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/serenedesiree/scrapeallin.git
-   cd scrapeallin
-   ```
-2. Install the required libraries:
-   ```bash
-   pip install -r requirements.txt
-   ```
+
+To install the All In Podcast Scraper Bot, clone the repository and install the necessary dependencies:
+
+```bash
+git clone https://github.com/serenedesiree/scrapeallin.git
+cd scrapeallin
+pip install -r requirements.txt
+```
 
 ## Usage
-1. Run the scraper bot:
-   ```bash
-   python scraper.py
-   ```
-2. Provide the episode URL and keywords you'd like to track when prompted.
-3. The scraper will analyze the episode and generate a timeline chart based on keyword mentions.
 
-## Contributing
-Feel free to submit issues or pull requests. Contributions are welcome!
+Run the scraper using the following command:
 
-## License
-This project is licensed under the MIT License. See the LICENSE file for details.
+```bash
+python scraper.py
+```
 
-## Contact
-For any questions or feedback, please reach out to serenedesiree@example.com.
+## Examples
+
+Here are some examples of how to use the scraper:
+
+```bash
+python scraper.py --episode 123
+```
+
+This command will scrape data for episode 123 of the All In podcast.
+
+## Output Files
+
+The scraper generates the following output files:
+
+- `episodes.json`: Contains metadata for each scraped episode.
+- `transcripts`: A directory with transcript files named by episode number.
+
+## Customization
+
+You can customize the scraper by modifying the following parameters in the `config.py` file:
+
+- `BASE_URL`: The base URL for the All In podcast.
+- `OUTPUT_DIRECTORY`: The directory to save output files.
+
+## Troubleshooting
+
+If you encounter any issues, consider the following solutions:
+
+- Ensure you have the required Python version (3.6 or higher).
+- Check your internet connection.
+- Review the logs for any specific error messages.
+
+## Features
+
+- Scrapes episode metadata and transcripts.
+- Customizable output formats.
+- Error handling for network issues.
